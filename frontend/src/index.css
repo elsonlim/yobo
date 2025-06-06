@@ -1,0 +1,114 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0 20px; /* Add some horizontal padding to the body */
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Basic Button Styling */
+button,
+input[type="submit"],
+input[type="button"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Input fields basic styling */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px; /* Add some space below inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Utility Classes (Optional, but can be handy) */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: auto; /* Should be 'hidden' or 'auto' if using floats, otherwise not strictly necessary for padding */
+  padding: 0 2rem;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Add some margin to the main content area if needed */
+main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Specific App Header styling */
+.App-header {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
